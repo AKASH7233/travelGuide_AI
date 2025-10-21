@@ -40,9 +40,13 @@ export const getItineraryById = (id) => {
   return api.get(`/itinerary/${id}`);
 };
 
-// Weather endpoint
+// Weather endpoints
 export const getWeather = (city) => {
   return api.get(`/weather/${city}`);
+};
+
+export const getWeatherForecast = (city) => {
+  return api.get(`/weather/forecast/${city}`);
 };
 
 // Export the axios instance for direct use
@@ -59,4 +63,5 @@ export default {
   saveItinerary,
   getItineraryById,
   getWeather,
+  getWeatherForecast,
 };
