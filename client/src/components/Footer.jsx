@@ -19,16 +19,19 @@ const Footer = () => {
               Let AI create the perfect itinerary tailored to your preferences.
             </p>
             <div className="flex space-x-4">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
-                 className="text-gray-400 hover:text-primary-400 transition-colors">
+              <a href="https://twitter.com/#" target="_blank" rel="noopener noreferrer" 
+                 className="text-gray-400 hover:text-primary-400 transition-colors"
+                 aria-label="Twitter">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
-                 className="text-gray-400 hover:text-primary-400 transition-colors">
+              <a href="https://github.com/akash7233" target="_blank" rel="noopener noreferrer" 
+                 className="text-gray-400 hover:text-primary-400 transition-colors"
+                 aria-label="GitHub">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
-                 className="text-gray-400 hover:text-primary-400 transition-colors">
+              <a href="https://linkedin.com/in/akashyadav33" target="_blank" rel="noopener noreferrer" 
+                 className="text-gray-400 hover:text-primary-400 transition-colors"
+                 aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
