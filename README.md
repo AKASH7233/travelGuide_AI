@@ -7,9 +7,9 @@ A comprehensive AI-powered travel planning application built with the MERN stack
 ### Core Functionality
 - **AI-Powered Itinerary Builder**: Generate personalized day-by-day travel itineraries
 - **Smart Trip Suggestions**: Curated travel destinations with detailed information
-- **Real-time Weather Integration**: Get current weather information for destinations
+- **Real-time Weather Integration**: Get current weather and 5-day forecasts for destinations
 - **Custom Itinerary Management**: Save, view, and manage your personalized itineraries
-- **Interactive Trip Details**: Explore comprehensive trip information with maps and highlights
+- **Interactive Trip Details**: Explore comprehensive trip information with weather widgets and highlights
 
 ### AI-Powered Features
 - **Intelligent Itinerary Generation**: AI creates detailed travel plans based on:
@@ -118,6 +118,7 @@ ai-travel-guide/
 - **Node.js** (v18 or higher)
 - **MongoDB** (local instance or MongoDB Atlas)
 - **Google Gemini AI API Key** ([Get it here](https://makersuite.google.com/app/apikey))
+- **OpenWeatherMap API Key** ([Get it here](https://openweathermap.org/api)) - Free tier available
 
 ### Installation
 
@@ -158,8 +159,8 @@ ai-travel-guide/
    # Google Gemini AI API Key
    GEMINI_API_KEY=your-gemini-api-key-here
    
-   # Weather API (optional)
-   WEATHER_API_KEY=your-weather-api-key-here
+   # OpenWeatherMap API Key (for weather features)
+   OPENWEATHER_API_KEY=your-openweathermap-api-key-here
    ```
 
    **Frontend** (`client/.env`):
@@ -211,6 +212,7 @@ ai-travel-guide/
 
 ### Weather Endpoints
 - `GET /api/weather/:city` - Get current weather for destination
+- `GET /api/weather/forecast/:city` - Get 5-day weather forecast
 
 ### Request Examples
 
@@ -369,13 +371,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Lucide React** - Elegant icon system
 - **React & Vite** - Modern frontend development
 
-## 📞 Support
+## 📞 Support & Connect
 
 For questions, issues, or suggestions:
 
 1. **GitHub Issues**: [Create an issue](https://github.com/AKASH7233/travelGuide_AI/issues)
-2. **Email**: Contact the maintainer
-3. **Documentation**: Check this README and code comments
+2. **GitHub**: [@akash7233](https://github.com/akash7233)
+3. **LinkedIn**: [akash7233](https://linkedin.com/in/akash7233)
+4. **Documentation**: Check this README and code comments
+
+### Additional Documentation
+- [Trip Itineraries Summary](TRIP_ITINERARIES_SUMMARY.md) - Complete list of destinations
+- [Weather API Integration](WEATHER_API_INTEGRATION.md) - Weather feature documentation
 
 ## 🗺️ Roadmap
 
