@@ -173,7 +173,6 @@ const dummyTrips = [
       'Book adventure activities through certified operators'
     ]
   },
-  // Add more detailed trips as needed...
 ];
 
 const TripDetails = () => {

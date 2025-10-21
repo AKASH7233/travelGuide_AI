@@ -11,6 +11,7 @@ const TripDetail = () => {
   const { id } = useParams();
   const [trip, setTrip] = useState(null);
   const [weather, setWeather] = useState(null);
+  const [forecast, setForecast] = useState(null);
   const [loading, setLoading] = useState(true);
   const [saved, setSaved] = useState(false);
 
@@ -24,13 +25,21 @@ const TripDetail = () => {
       const response = await api.getTripById(id);
       setTrip(response.data);
 
-      // Fetch weather if available
+      // Fetch weather and forecast if available
       if (response.data.destination) {
         try {
-          const weatherResponse = await api.getWeather(response.data.destination);
+          // Extract city name from destination (e.g., "Paris, France" -> "Paris")
+          const city = response.data.destination.split(',')[0].trim();
+          
+          // Fetch current weather
+          const weatherResponse = await api.getWeather(city);
           setWeather(weatherResponse.data);
+
+          // Fetch weather forecast
+          const forecastResponse = await api.getWeatherForecast(city);
+          setForecast(forecastResponse.data);
         } catch (error) {
-          console.log('Weather data not available');
+          console.log('Weather data not available:', error.message);
         }
       }
     } catch (error) {
@@ -179,7 +188,7 @@ const TripDetail = () => {
               {/* Weather Widget */}
               {weather && (
                 <div className="mb-6">
-                  <WeatherWidget weather={weather} />
+                  <WeatherWidget weather={weather} forecast={forecast} />
                 </div>
               )}
 

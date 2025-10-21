@@ -378,7 +378,7 @@ const seedTrips = [
     itinerary: [
       {
         day: 1,
-        title: 'Arrival and First Impressions',
+        title: 'Arrival and Champs-Élysées',
         activities: [
           {
             time: 'Morning',
@@ -404,6 +404,180 @@ const seedTrips = [
         ],
         estimatedCost: '$65',
         tips: 'Buy a Paris Museum Pass to save money on attractions. Use the Metro for affordable transportation.'
+      },
+      {
+        day: 2,
+        title: 'Eiffel Tower & Seine Cruise',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Eiffel Tower',
+            description: 'Visit the iconic iron lady, go up to the summit for panoramic views',
+            duration: '3 hours',
+            estimatedCost: '$35'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Trocadéro Gardens',
+            description: 'Perfect photo spot with Eiffel Tower views',
+            duration: '1 hour',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Evening',
+            activity: 'Seine River Cruise',
+            description: 'Romantic sunset cruise along the Seine',
+            duration: '2 hours',
+            estimatedCost: '$20'
+          }
+        ],
+        estimatedCost: '$55',
+        tips: 'Book Eiffel Tower tickets online to skip lines. Best sunset views from the river cruise.'
+      },
+      {
+        day: 3,
+        title: 'Louvre & Tuileries Garden',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Louvre Museum',
+            description: 'Explore world-famous art including Mona Lisa and Venus de Milo',
+            duration: '4 hours',
+            estimatedCost: '$20'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Tuileries Garden',
+            description: 'Stroll through beautiful gardens and relax',
+            duration: '1.5 hours',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Evening',
+            activity: 'Place de la Concorde & Dinner',
+            description: 'Visit historic square and dine at a traditional restaurant',
+            duration: '2.5 hours',
+            estimatedCost: '$45'
+          }
+        ],
+        estimatedCost: '$65',
+        tips: 'Enter Louvre from the less crowded Carrousel entrance. Visit on Wednesday for late hours.'
+      },
+      {
+        day: 4,
+        title: 'Montmartre & Sacré-Cœur',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Sacré-Cœur Basilica',
+            description: 'Visit the stunning white basilica on the hill',
+            duration: '2 hours',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Montmartre Walking Tour',
+            description: 'Explore artistic neighborhood, see Place du Tertre',
+            duration: '3 hours',
+            estimatedCost: '$15'
+          },
+          {
+            time: 'Evening',
+            activity: 'Moulin Rouge Show',
+            description: 'Experience the famous cabaret (optional)',
+            duration: '2 hours',
+            estimatedCost: '$120'
+          }
+        ],
+        estimatedCost: '$135',
+        tips: 'Early morning at Sacré-Cœur for fewer crowds. Try crepes from street vendors.'
+      },
+      {
+        day: 5,
+        title: 'Versailles Day Trip',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Train to Versailles',
+            description: 'Take RER C train to Palace of Versailles',
+            duration: '1 hour',
+            estimatedCost: '$8'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Palace of Versailles',
+            description: 'Explore the magnificent palace and Hall of Mirrors',
+            duration: '4 hours',
+            estimatedCost: '$20'
+          },
+          {
+            time: 'Evening',
+            activity: 'Versailles Gardens',
+            description: 'Stroll through the expansive royal gardens',
+            duration: '2 hours',
+            estimatedCost: '$0'
+          }
+        ],
+        estimatedCost: '$28',
+        tips: 'Go early to avoid crowds. Rent a bike to explore the gardens. Pack lunch to save money.'
+      },
+      {
+        day: 6,
+        title: 'Notre-Dame & Latin Quarter',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Notre-Dame Cathedral',
+            description: 'Visit the Gothic masterpiece (exterior viewing during reconstruction)',
+            duration: '1.5 hours',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Sainte-Chapelle',
+            description: 'Marvel at stunning stained glass windows',
+            duration: '1.5 hours',
+            estimatedCost: '$12'
+          },
+          {
+            time: 'Evening',
+            activity: 'Latin Quarter Exploration',
+            description: 'Wander through historic streets, bookshops, and cafes',
+            duration: '3 hours',
+            estimatedCost: '$40'
+          }
+        ],
+        estimatedCost: '$52',
+        tips: 'Combine Sainte-Chapelle with Conciergerie ticket for savings. Shakespeare & Company bookstore is a must-visit.'
+      },
+      {
+        day: 7,
+        title: 'Shopping & Departure',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Le Marais District',
+            description: 'Shop in trendy boutiques and visit Place des Vosges',
+            duration: '2.5 hours',
+            estimatedCost: '$30'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Galeries Lafayette',
+            description: 'Shopping at famous department store with rooftop views',
+            duration: '2 hours',
+            estimatedCost: '$50'
+          },
+          {
+            time: 'Evening',
+            activity: 'Last Dinner & Airport',
+            description: 'Final French meal and departure',
+            duration: '2 hours',
+            estimatedCost: '$45'
+          }
+        ],
+        estimatedCost: '$125',
+        tips: 'Get tax refund if you spend over €100. Save time for last-minute souvenirs at the airport.'
       }
     ]
   },
@@ -509,6 +683,209 @@ const seedTrips = [
         ],
         estimatedCost: '$75',
         tips: 'Visit Shibuya Sky for amazing city views. Don\'t miss the Hachiko statue photo opportunity.'
+      },
+      {
+        day: 4,
+        title: 'Akihabara & Tokyo Skytree',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Akihabara Electric Town',
+            description: 'Explore anime, manga, and electronics paradise',
+            duration: '3 hours',
+            estimatedCost: '$30'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Tokyo Skytree',
+            description: 'Visit Japan\'s tallest tower for incredible city views',
+            duration: '2 hours',
+            estimatedCost: '$25'
+          },
+          {
+            time: 'Evening',
+            activity: 'Asakusa Evening',
+            description: 'Return to Asakusa for evening atmosphere and dinner',
+            duration: '2 hours',
+            estimatedCost: '$35'
+          }
+        ],
+        estimatedCost: '$90',
+        tips: 'Buy anime/manga souvenirs in Akihabara. Book Skytree tickets online for fast track entry.'
+      },
+      {
+        day: 5,
+        title: 'Tsukiji & Ginza',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Tsukiji Outer Market',
+            description: 'Try fresh sushi breakfast and street food',
+            duration: '2.5 hours',
+            estimatedCost: '$40'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Ginza Shopping District',
+            description: 'Explore luxury shopping and department stores',
+            duration: '3 hours',
+            estimatedCost: '$30'
+          },
+          {
+            time: 'Evening',
+            activity: 'Tokyo Tower Night View',
+            description: 'Visit illuminated Tokyo Tower',
+            duration: '2 hours',
+            estimatedCost: '$20'
+          }
+        ],
+        estimatedCost: '$90',
+        tips: 'Arrive early at Tsukiji for fresh sushi. Free observation deck at some Ginza buildings.'
+      },
+      {
+        day: 6,
+        title: 'Odaiba & TeamLab',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Odaiba Waterfront',
+            description: 'Visit futuristic island with Rainbow Bridge views',
+            duration: '2 hours',
+            estimatedCost: '$15'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'TeamLab Borderless',
+            description: 'Experience mind-blowing digital art museum',
+            duration: '3 hours',
+            estimatedCost: '$35'
+          },
+          {
+            time: 'Evening',
+            activity: 'DiverCity Tokyo Plaza',
+            description: 'See life-size Gundam statue and shop',
+            duration: '2 hours',
+            estimatedCost: '$25'
+          }
+        ],
+        estimatedCost: '$75',
+        tips: 'Book TeamLab tickets in advance (they sell out!). Take the Yurikamome line for views.'
+      },
+      {
+        day: 7,
+        title: 'Nikko Day Trip',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Train to Nikko',
+            description: 'Take train to UNESCO World Heritage mountain town',
+            duration: '2 hours',
+            estimatedCost: '$30'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Toshogu Shrine',
+            description: 'Visit ornate shrine in beautiful forest setting',
+            duration: '3 hours',
+            estimatedCost: '$15'
+          },
+          {
+            time: 'Evening',
+            activity: 'Lake Chuzenji',
+            description: 'Scenic lake and Kegon Falls visit',
+            duration: '2 hours',
+            estimatedCost: '$10'
+          }
+        ],
+        estimatedCost: '$55',
+        tips: 'Buy Nikko Pass for discounted train and bus. Pack layers - mountains are cooler.'
+      },
+      {
+        day: 8,
+        title: 'Roppongi & Tokyo Midtown',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Roppongi Hills',
+            description: 'Visit Mori Art Museum and City View observation deck',
+            duration: '3 hours',
+            estimatedCost: '$25'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Tokyo Midtown',
+            description: 'Explore design and lifestyle complex',
+            duration: '2 hours',
+            estimatedCost: '$20'
+          },
+          {
+            time: 'Evening',
+            activity: 'Roppongi Nightlife',
+            description: 'Experience international nightlife scene',
+            duration: '3 hours',
+            estimatedCost: '$60'
+          }
+        ],
+        estimatedCost: '$105',
+        tips: 'Visit Roppongi Hills at sunset for best views. Many international restaurants available.'
+      },
+      {
+        day: 9,
+        title: 'Imperial Palace & East Gardens',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Imperial Palace East Gardens',
+            description: 'Stroll through beautiful royal gardens (free entry)',
+            duration: '2.5 hours',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Marunouchi & Tokyo Station',
+            description: 'Explore business district and iconic station building',
+            duration: '2 hours',
+            estimatedCost: '$15'
+          },
+          {
+            time: 'Evening',
+            activity: 'Farewell Dinner',
+            description: 'Enjoy kaiseki or yakiniku farewell dinner',
+            duration: '2.5 hours',
+            estimatedCost: '$70'
+          }
+        ],
+        estimatedCost: '$85',
+        tips: 'East Gardens closed on Mondays and Fridays. Tokyo Station has great souvenir shops.'
+      },
+      {
+        day: 10,
+        title: 'Last-Minute Shopping & Departure',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Don Quijote Shopping',
+            description: 'Last-minute souvenir shopping at discount mega-store',
+            duration: '2 hours',
+            estimatedCost: '$50'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Hotel Checkout & Lunch',
+            description: 'Final ramen or soba meal',
+            duration: '1.5 hours',
+            estimatedCost: '$20'
+          },
+          {
+            time: 'Evening',
+            activity: 'Airport Transfer',
+            description: 'Narita Express or Limousine Bus to airport',
+            duration: '1.5 hours',
+            estimatedCost: '$30'
+          }
+        ],
+        estimatedCost: '$100',
+        tips: 'Leave extra time for airport shopping. Keep some yen for airport expenses.'
       }
     ]
   },
@@ -614,6 +991,151 @@ const seedTrips = [
         ],
         estimatedCost: '$8',
         tips: 'Wear sarong at temples (usually provided). Visit during low tide for best photos.'
+      },
+      {
+        day: 4,
+        title: 'Water Activities & Nusa Dua',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Snorkeling at Blue Lagoon',
+            description: 'Discover colorful marine life and coral reefs',
+            duration: '3 hours',
+            estimatedCost: '$25'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Nusa Dua Beach',
+            description: 'Relax on pristine white sand beach',
+            duration: '2 hours',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Evening',
+            activity: 'Water Blow',
+            description: 'Watch powerful ocean waves crash against rocks',
+            duration: '1 hour',
+            estimatedCost: '$0'
+          }
+        ],
+        estimatedCost: '$25',
+        tips: 'Book snorkeling tour through hotel for better rates. Bring underwater camera.'
+      },
+      {
+        day: 5,
+        title: 'Uluwatu Temple & Kecak Dance',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Padang Padang Beach',
+            description: 'Visit famous beach from Eat Pray Love movie',
+            duration: '2 hours',
+            estimatedCost: '$5'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Uluwatu Temple',
+            description: 'Clifftop temple with stunning ocean views',
+            duration: '2 hours',
+            estimatedCost: '$5'
+          },
+          {
+            time: 'Evening',
+            activity: 'Kecak Fire Dance',
+            description: 'Traditional Balinese dance performance at sunset',
+            duration: '2 hours',
+            estimatedCost: '$10'
+          }
+        ],
+        estimatedCost: '$20',
+        tips: 'Watch your belongings - monkeys at Uluwatu are mischievous! Arrive early for good seats.'
+      },
+      {
+        day: 6,
+        title: 'Canggu & Surf Culture',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Surf Lesson at Canggu',
+            description: 'Learn to surf on beginner-friendly waves',
+            duration: '2.5 hours',
+            estimatedCost: '$35'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Canggu Beach Clubs',
+            description: 'Relax at trendy beach clubs',
+            duration: '3 hours',
+            estimatedCost: '$25'
+          },
+          {
+            time: 'Evening',
+            activity: 'Old Man\'s for Sunset',
+            description: 'Watch surfers and enjoy sunset drinks',
+            duration: '2 hours',
+            estimatedCost: '$15'
+          }
+        ],
+        estimatedCost: '$75',
+        tips: 'Canggu is perfect for digital nomads. Rent a surfboard if you want to practice more.'
+      },
+      {
+        day: 7,
+        title: 'Mount Batur Sunrise Trek',
+        activities: [
+          {
+            time: 'Early Morning',
+            activity: 'Mount Batur Sunrise Hike',
+            description: 'Trek active volcano for spectacular sunrise (2AM start)',
+            duration: '6 hours',
+            estimatedCost: '$40'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Hot Springs',
+            description: 'Soak tired muscles in natural hot springs',
+            duration: '2 hours',
+            estimatedCost: '$15'
+          },
+          {
+            time: 'Evening',
+            activity: 'Rest & Traditional Massage',
+            description: 'Balinese spa treatment',
+            duration: '2 hours',
+            estimatedCost: '$20'
+          }
+        ],
+        estimatedCost: '$75',
+        tips: 'Book trek with reputable guide. Bring warm clothes and flashlight. Worth the early wake-up!'
+      },
+      {
+        day: 8,
+        title: 'Last Day & Departure',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Last Beach Time',
+            description: 'Final swim and beach breakfast',
+            duration: '2 hours',
+            estimatedCost: '$15'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Souvenir Shopping',
+            description: 'Buy handicrafts, coffee, and local products',
+            duration: '2 hours',
+            estimatedCost: '$30'
+          },
+          {
+            time: 'Evening',
+            activity: 'Airport Transfer',
+            description: 'Farewell to paradise island',
+            duration: '1 hour',
+            estimatedCost: '$10'
+          }
+        ],
+        estimatedCost: '$55',
+        tips: 'Buy Balinese coffee and local art as souvenirs. Leave early for airport - traffic can be heavy.'
       }
     ]
   },
@@ -719,6 +1241,64 @@ const seedTrips = [
         ],
         estimatedCost: '$220',
         tips: 'MET has a suggested admission price. Pack snacks for the park.'
+      },
+      {
+        day: 4,
+        title: 'Brooklyn & DUMBO',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Brooklyn Heights Promenade',
+            description: 'Stunning Manhattan skyline views',
+            duration: '1.5 hours',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'DUMBO & Brooklyn Bridge Park',
+            description: 'Explore trendy neighborhood with cobblestone streets',
+            duration: '3 hours',
+            estimatedCost: '$40'
+          },
+          {
+            time: 'Evening',
+            activity: 'Dinner at Time Out Market',
+            description: 'Sample foods from NYC\'s best chefs',
+            duration: '2 hours',
+            estimatedCost: '$60'
+          }
+        ],
+        estimatedCost: '$100',
+        tips: 'Get the iconic Manhattan Bridge photo from Washington Street. Try Grimaldi\'s pizza.'
+      },
+      {
+        day: 5,
+        title: 'Museums & Departure',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'American Museum of Natural History',
+            description: 'Visit dinosaurs, planetarium, and world cultures',
+            duration: '3 hours',
+            estimatedCost: '$28'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Last-Minute Shopping',
+            description: 'Souvenir shopping on 5th Avenue or SoHo',
+            duration: '2 hours',
+            estimatedCost: '$75'
+          },
+          {
+            time: 'Evening',
+            activity: 'Airport Transfer',
+            description: 'Head to JFK, Newark, or LaGuardia',
+            duration: '1 hour',
+            estimatedCost: '$60'
+          }
+        ],
+        estimatedCost: '$163',
+        tips: 'Book museum tickets online. Allow extra time for airport security during peak hours.'
       }
     ]
   },
@@ -824,6 +1404,93 @@ const seedTrips = [
         ],
         estimatedCost: '$160',
         tips: 'Santorini wines are unique - don\'t miss Santo Wines winery with sunset views.'
+      },
+      {
+        day: 4,
+        title: 'Akrotiri & Lighthouse',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Ancient Akrotiri',
+            description: 'Explore the prehistoric city preserved by volcanic ash',
+            duration: '2.5 hours',
+            estimatedCost: '$15'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Akrotiri Lighthouse',
+            description: 'Visit the southernmost point with panoramic views',
+            duration: '1.5 hours',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Evening',
+            activity: 'Romantic Dinner in Imerovigli',
+            description: 'Cliffside dining with caldera views',
+            duration: '2.5 hours',
+            estimatedCost: '$120'
+          }
+        ],
+        estimatedCost: '$135',
+        tips: 'Akrotiri archaeological site is fascinating - like a Greek Pompeii. Book restaurant in advance.'
+      },
+      {
+        day: 5,
+        title: 'Catamaran Cruise',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Full Day Catamaran Cruise',
+            description: 'Sail around the island with stops at beaches',
+            duration: '8 hours',
+            estimatedCost: '$150'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Swimming & BBQ on Board',
+            description: 'Enjoy swimming stops and onboard Greek BBQ lunch',
+            duration: 'Included',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Evening',
+            activity: 'Sunset Sailing',
+            description: 'Watch sunset from the sea',
+            duration: 'Included',
+            estimatedCost: '$0'
+          }
+        ],
+        estimatedCost: '$150',
+        tips: 'Best way to see the island from a different perspective. Bring sunscreen and swimwear!'
+      },
+      {
+        day: 6,
+        title: 'Relaxation & Departure',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Final Pool Time',
+            description: 'Relax at hotel infinity pool with caldera views',
+            duration: '2 hours',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Last-Minute Shopping',
+            description: 'Buy local products, jewelry, and souvenirs',
+            duration: '2 hours',
+            estimatedCost: '$100'
+          },
+          {
+            time: 'Evening',
+            activity: 'Airport Transfer',
+            description: 'Farewell to the magical island',
+            duration: '30 minutes',
+            estimatedCost: '$50'
+          }
+        ],
+        estimatedCost: '$150',
+        tips: 'Buy cherry tomatoes and fava - local specialties. Leave time to enjoy last views!'
       }
     ]
   },
@@ -929,6 +1596,122 @@ const seedTrips = [
         ],
         estimatedCost: '$220',
         tips: 'Zermatt is car-free - electric taxis only. Best Matterhorn views in morning light.'
+      },
+      {
+        day: 4,
+        title: 'Lucerne & Mount Pilatus',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Travel to Lucerne',
+            description: 'Scenic train journey to picturesque city',
+            duration: '2 hours',
+            estimatedCost: '$60'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Mount Pilatus Golden Round Trip',
+            description: 'Boat, cogwheel railway, and cable car adventure',
+            duration: '5 hours',
+            estimatedCost: '$120'
+          },
+          {
+            time: 'Evening',
+            activity: 'Lucerne Old Town',
+            description: 'Walk across Chapel Bridge and explore medieval streets',
+            duration: '2 hours',
+            estimatedCost: '$40'
+          }
+        ],
+        estimatedCost: '$220',
+        tips: 'Swiss Travel Pass covers most transport. Lucerne is perfect for Swiss watch shopping.'
+      },
+      {
+        day: 5,
+        title: 'Lauterbrunnen & Waterfalls',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Lauterbrunnen Valley',
+            description: 'Valley of 72 waterfalls, inspiration for Tolkien',
+            duration: '2.5 hours',
+            estimatedCost: '$30'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Trümmelbach Falls',
+            description: 'Incredible glacier waterfalls inside the mountain',
+            duration: '2 hours',
+            estimatedCost: '$15'
+          },
+          {
+            time: 'Evening',
+            activity: 'Grindelwald Village',
+            description: 'Charming Alpine village dinner',
+            duration: '2.5 hours',
+            estimatedCost: '$65'
+          }
+        ],
+        estimatedCost: '$110',
+        tips: 'Trümmelbach Falls is unique - waterfall inside a mountain! Bring a jacket, it\'s cool inside.'
+      },
+      {
+        day: 6,
+        title: 'Glacier 3000 & Ice Express',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Cable Car to Glacier 3000',
+            description: 'Year-round snow activities at 3,000 meters',
+            duration: '2 hours',
+            estimatedCost: '$80'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Peak Walk Suspension Bridge',
+            description: 'Walk between two mountain peaks on suspended bridge',
+            duration: '1.5 hours',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Evening',
+            activity: 'Alpine Slide & Return',
+            description: 'Thrilling toboggan ride down the mountain',
+            duration: '2.5 hours',
+            estimatedCost: '$20'
+          }
+        ],
+        estimatedCost: '$100',
+        tips: 'Only place connecting two peaks by suspension bridge. Alpine Coaster is super fun!'
+      },
+      {
+        day: 7,
+        title: 'Farewell & Departure',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Last Mountain Views',
+            description: 'Enjoy breakfast with Alpine panorama',
+            duration: '1.5 hours',
+            estimatedCost: '$30'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Chocolate Factory Tour',
+            description: 'Visit Lindt or Cailler chocolate factory',
+            duration: '2 hours',
+            estimatedCost: '$15'
+          },
+          {
+            time: 'Evening',
+            activity: 'Train to Zurich Airport',
+            description: 'Scenic train journey to airport',
+            duration: '2.5 hours',
+            estimatedCost: '$60'
+          }
+        ],
+        estimatedCost: '$105',
+        tips: 'Buy Swiss chocolate and watches at duty-free. Book factory tour in advance.'
       }
     ]
   },
@@ -1034,6 +1817,64 @@ const seedTrips = [
         ],
         estimatedCost: '$65',
         tips: 'Bargain at souks - start at 50% of asking price. Abra rides cost only $0.50!'
+      },
+      {
+        day: 4,
+        title: 'Abu Dhabi Day Trip',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Sheikh Zayed Grand Mosque',
+            description: 'Visit one of the world\'s largest mosques',
+            duration: '2.5 hours',
+            estimatedCost: '$0'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Louvre Abu Dhabi',
+            description: 'Explore art museum under stunning dome',
+            duration: '2.5 hours',
+            estimatedCost: '$17'
+          },
+          {
+            time: 'Evening',
+            activity: 'Corniche & Emirates Palace',
+            description: 'Walk along waterfront and see luxurious palace',
+            duration: '2 hours',
+            estimatedCost: '$30'
+          }
+        ],
+        estimatedCost: '$47',
+        tips: 'Dress modestly for mosque - abayas provided for women. Abu Dhabi is 90 minutes from Dubai.'
+      },
+      {
+        day: 5,
+        title: 'Leisure & Departure',
+        activities: [
+          {
+            time: 'Morning',
+            activity: 'Palm Jumeirah & Atlantis',
+            description: 'Visit iconic palm-shaped island',
+            duration: '2 hours',
+            estimatedCost: '$20'
+          },
+          {
+            time: 'Afternoon',
+            activity: 'Last-Minute Shopping',
+            description: 'Dubai Marina Mall and souvenirs',
+            duration: '2.5 hours',
+            estimatedCost: '$80'
+          },
+          {
+            time: 'Evening',
+            activity: 'Airport Transfer',
+            description: 'Depart from Dubai International Airport',
+            duration: '1 hour',
+            estimatedCost: '$40'
+          }
+        ],
+        estimatedCost: '$140',
+        tips: 'Buy gold, perfumes, and dates as souvenirs. Get VAT refund at airport if eligible.'
       }
     ]
   },
