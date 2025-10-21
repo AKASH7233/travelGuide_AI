@@ -1,234 +1,465 @@
-# 🌍 AI Travel Guide# 🌍 AI Travel Guide# 🌍 AI Travel Guide - Personalized Tour Planner
+# 🌍 AI Travel Guide# 🌍 AI Travel Guide# 🌍 AI Travel Guide# 🌍 AI Travel Guide - Personalized Tour Planner
 
 
 
-An intelligent travel itinerary generator powered by Google Gemini AI with real-time streaming, chain of thought visualization, and personalized trip planning.
+An intelligent travel planning application that uses Google's Gemini AI to create personalized itineraries. Built with React, Node.js, Express, and MongoDB.
 
 
 
-![AI Travel Guide Banner](https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=300&fit=crop)An intelligent travel itinerary generator powered by Google Gemini AI with real-time streaming, chain of thought visualization, and personalized trip planning.An intelligent travel planning application that uses Google's Gemini AI to create personalized itineraries based on your preferences. Built with React, Node.js, Express, MongoDB, and powered by artificial intelligence.
+## ✨ FeaturesAn intelligent travel itinerary generator powered by Google Gemini AI with real-time streaming, chain of thought visualization, and personalized trip planning.
 
 
+
+- 🤖 **AI-Powered Planning** - Generate personalized itineraries using Google Gemini AI
+
+- ⚡ **Real-Time Streaming** - Watch AI create your itinerary with live streaming responses
+
+- 🧠 **Chain of Thought** - See the AI's reasoning process as it plans your trip![AI Travel Guide Banner](https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=300&fit=crop)An intelligent travel itinerary generator powered by Google Gemini AI with real-time streaming, chain of thought visualization, and personalized trip planning.An intelligent travel planning application that uses Google's Gemini AI to create personalized itineraries based on your preferences. Built with React, Node.js, Express, MongoDB, and powered by artificial intelligence.
+
+- 💾 **Save & Download** - Save favorite itineraries and download as JSON
+
+- 🗺️ **Curated Trips** - Browse pre-made itineraries for popular destinations
+
+- 📱 **Responsive Design** - Beautiful UI that works on all devices
 
 ---
 
-
-
-## 📑 Table of Contents---![AI Travel Guide](https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=400&fit=crop)
-
-
-
-- [Features](#-features)
-
-- [Tech Stack](#-tech-stack)
-
-- [Project Structure](#-project-structure)## 📑 Table of Contents## ✨ Features
-
-- [Prerequisites](#-prerequisites)
-
-- [Environment Setup](#-environment-setup)
-
-- [Installation](#-installation)
-
-- [Running the Application](#-running-the-application)- [Features](#-features)- **🤖 AI-Powered Planning**: Generate detailed, personalized itineraries using Google Gemini AI
-
-- [Features Guide](#-features-guide)
-
-- [API Endpoints](#-api-endpoints)- [Tech Stack](#-tech-stack)- **📅 Day-by-Day Breakdowns**: Get comprehensive daily plans with activities, timings, and costs
-
-- [Git Workflow](#-git-workflow)
-
-- [Troubleshooting](#-troubleshooting)- [Project Structure](#-project-structure)- **🎯 Personalization**: Customize based on travel style, budget, duration, and interests
+## 🛠️ Tech Stack
 
 
 
----- [Prerequisites](#-prerequisites)- **🌤️ Weather Integration**: Real-time weather information for your destination
+**Frontend:**
+
+- React 18.2## 📑 Table of Contents---![AI Travel Guide](https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=400&fit=crop)
+
+- Vite 5.0
+
+- Tailwind CSS 3.4
+
+- React Router 6.21
+
+- Axios 1.6- [Features](#-features)
 
 
 
-## ✨ Features- [Environment Setup](#-environment-setup)- **💾 Save & Download**: Save your favorite itineraries and download them for offline use
+**Backend:**- [Tech Stack](#-tech-stack)
+
+- Node.js
+
+- Express 4.18- [Project Structure](#-project-structure)## 📑 Table of Contents## ✨ Features
+
+- MongoDB with Mongoose 8.0
+
+- Google Gemini AI (gemini-2.5-flash)- [Prerequisites](#-prerequisites)
 
 
 
-### Core Features- [Installation](#-installation)- **🗺️ Curated Trips**: Browse pre-made itineraries for popular destinations
+## 📁 Project Structure- [Environment Setup](#-environment-setup)
 
-- **🤖 AI-Powered Itinerary Generation** - Generate personalized travel plans using Google Gemini AI
+
+
+```- [Installation](#-installation)
+
+ai-travel-guide/
+
+├── client/                     # React frontend- [Running the Application](#-running-the-application)- [Features](#-features)- **🤖 AI-Powered Planning**: Generate detailed, personalized itineraries using Google Gemini AI
+
+│   ├── src/
+
+│   │   ├── components/        # Reusable components- [Features Guide](#-features-guide)
+
+│   │   ├── pages/             # Page components
+
+│   │   ├── services/          # API integration- [API Endpoints](#-api-endpoints)- [Tech Stack](#-tech-stack)- **📅 Day-by-Day Breakdowns**: Get comprehensive daily plans with activities, timings, and costs
+
+│   │   ├── App.jsx
+
+│   │   └── main.jsx- [Git Workflow](#-git-workflow)
+
+│   ├── index.html
+
+│   ├── package.json- [Troubleshooting](#-troubleshooting)- [Project Structure](#-project-structure)- **🎯 Personalization**: Customize based on travel style, budget, duration, and interests
+
+│   ├── tailwind.config.js
+
+│   └── vite.config.js
+
+│
+
+├── server/                     # Express backend---- [Prerequisites](#-prerequisites)- **🌤️ Weather Integration**: Real-time weather information for your destination
+
+│   ├── models/                # MongoDB schemas
+
+│   ├── routes/                # API routes
+
+│   ├── controllers/           # Business logic
+
+│   ├── config/                # Configuration## ✨ Features- [Environment Setup](#-environment-setup)- **💾 Save & Download**: Save your favorite itineraries and download them for offline use
+
+│   ├── middleware/            # Express middleware
+
+│   ├── server.js
+
+│   └── package.json
+
+│### Core Features- [Installation](#-installation)- **🗺️ Curated Trips**: Browse pre-made itineraries for popular destinations
+
+├── .gitignore
+
+└── README.md- **🤖 AI-Powered Itinerary Generation** - Generate personalized travel plans using Google Gemini AI
+
+```
 
 - **⚡ Real-Time Streaming** - Watch AI generate your itinerary in real-time with Server-Sent Events (SSE)- [Running the Application](#-running-the-application)- **⚡ Real-time Generation**: Watch AI create your itinerary with streaming responses
 
+## 📋 Prerequisites
+
 - **🧠 Chain of Thought Visualization** - See the AI's reasoning process as it plans your trip
 
-- **👤 User Authentication** - Sign up, login, and manage your profile (localStorage-based)- [Features Guide](#-features-guide)- **🧠 Chain of Thought**: See the AI's thinking process as it plans your trip
+- Node.js (v18 or higher)
+
+- MongoDB (local or MongoDB Atlas)- **👤 User Authentication** - Sign up, login, and manage your profile (localStorage-based)- [Features Guide](#-features-guide)- **🧠 Chain of Thought**: See the AI's thinking process as it plans your trip
+
+- Google Gemini API Key - [Get it here](https://makersuite.google.com/app/apikey)
 
 - **💾 Save Itineraries** - Save and manage your generated trip plans
 
+## 🚀 Project Setup
+
 - **🗺️ Suggested Trips** - Browse 9 curated Indian destinations with detailed itineraries- [API Endpoints](#-api-endpoints)- **📱 Fully Responsive**: Beautiful design that works on all devices
+
+### 1. Clone the Repository
 
 - **📱 Responsive Design** - Beautiful UI that works on desktop, tablet, and mobile
 
-- [Troubleshooting](#-troubleshooting)
+```bash
 
-### Advanced Features
+git clone <repository-url>- [Troubleshooting](#-troubleshooting)
 
-- **📊 Streaming Progress Indicators** - Real-time progress bars and chunk counters## 🛠️ Tech Stack
+cd ai-travel-guide
 
-- **📅 Day-by-Day Breakdown** - Detailed daily schedules with activities, timings, and costs
+```### Advanced Features
 
-- **💰 Budget Tracking** - All costs displayed in Indian Rupees (₹)---
+
+
+### 2. Backend Setup- **📊 Streaming Progress Indicators** - Real-time progress bars and chunk counters## 🛠️ Tech Stack
+
+
+
+```bash- **📅 Day-by-Day Breakdown** - Detailed daily schedules with activities, timings, and costs
+
+cd server
+
+npm install- **💰 Budget Tracking** - All costs displayed in Indian Rupees (₹)---
+
+```
 
 - **⬇️ Download Itineraries** - Export your plans as JSON files
 
+Create a `.env` file in the `server/` directory:
+
 - **🔍 Filter & Search** - Filter trips by budget, duration, and travel style### Frontend
 
-- **🎨 Interactive UI** - Smooth animations and transitions throughout
+```env
 
-## ✨ Features- **React 18** - UI library
+PORT=5000- **🎨 Interactive UI** - Smooth animations and transitions throughout
 
----
+NODE_ENV=development
+
+MONGODB_URI=mongodb://localhost:27017/ai-travel-guide## ✨ Features- **React 18** - UI library
+
+GEMINI_API_KEY=your_gemini_api_key_here
+
+CLIENT_URL=http://localhost:5173---
+
+```
 
 - **Vite** - Build tool and dev server
 
+**Important:** Replace `your_gemini_api_key_here` with your actual Google Gemini API key.
+
 ## 🛠 Tech Stack
+
+### 3. Frontend Setup
 
 ### Core Features- **Tailwind CSS** - Utility-first CSS framework
 
-### Frontend
+```bash
 
-- **React 18.2** - UI library- **AI-Powered Itinerary Generation** - Generate personalized travel plans using Google Gemini AI- **React Router** - Navigation and routing
+cd ../client### Frontend
 
-- **Vite 5.0** - Build tool and dev server
+npm install
 
-- **Tailwind CSS 3.4** - Utility-first CSS framework- **Real-Time Streaming** - Watch AI generate your itinerary in real-time with Server-Sent Events (SSE)- **Axios** - HTTP client
+```- **React 18.2** - UI library- **AI-Powered Itinerary Generation** - Generate personalized travel plans using Google Gemini AI- **React Router** - Navigation and routing
 
-- **React Router 6.21** - Client-side routing
 
-- **Axios 1.6** - HTTP client- **Chain of Thought Visualization** - See the AI's reasoning process as it plans your trip- **Lucide React** - Icon library
+
+### 4. Seed Database (Optional)- **Vite 5.0** - Build tool and dev server
+
+
+
+Add sample trip data:- **Tailwind CSS 3.4** - Utility-first CSS framework- **Real-Time Streaming** - Watch AI generate your itinerary in real-time with Server-Sent Events (SSE)- **Axios** - HTTP client
+
+
+
+```bash- **React Router 6.21** - Client-side routing
+
+cd server
+
+node config/seedData.js- **Axios 1.6** - HTTP client- **Chain of Thought Visualization** - See the AI's reasoning process as it plans your trip- **Lucide React** - Icon library
+
+```
 
 - **Lucide React** - Icon library
 
+## 🏃 Running the Application
+
 - **User Authentication** - Sign up, login, and manage your profile- **Poppins Font** - Typography
+
+You'll need **two terminal windows**.
 
 ### Backend
 
+### Terminal 1 - Backend Server
+
 - **Node.js** - Runtime environment- **Save Itineraries** - Save and manage your generated trip plans
 
-- **Express 4.18** - Web framework
+```bash
 
-- **MongoDB** - Database (with Mongoose 8.0)- **Suggested Trips** - Browse 9 curated Indian destinations with detailed itineraries### Backend
+cd server- **Express 4.18** - Web framework
 
-- **Google Gemini AI** - AI model (gemini-2.5-flash)
+npm run dev
 
-- **CORS** - Cross-origin resource sharing- **Responsive Design** - Beautiful UI that works on desktop, tablet, and mobile- **Node.js** - Runtime environment
+```- **MongoDB** - Database (with Mongoose 8.0)- **Suggested Trips** - Browse 9 curated Indian destinations with detailed itineraries### Backend
 
-- **dotenv** - Environment variable management
 
-- **Express.js** - Web framework
 
----
+Expected output:- **Google Gemini AI** - AI model (gemini-2.5-flash)
 
-### Advanced Features- **MongoDB** - Database
+```
+
+🚀 Server is running on port 5000- **CORS** - Cross-origin resource sharing- **Responsive Design** - Beautiful UI that works on desktop, tablet, and mobile- **Node.js** - Runtime environment
+
+✅ MongoDB Connected
+
+```- **dotenv** - Environment variable management
+
+
+
+### Terminal 2 - Frontend Server- **Express.js** - Web framework
+
+
+
+```bash---
+
+cd client
+
+npm run dev### Advanced Features- **MongoDB** - Database
+
+```
 
 ## 📁 Project Structure
 
-- **Streaming Progress Indicators** - Real-time progress bars and chunk counters- **Mongoose** - ODM for MongoDB
+Expected output:
+
+```- **Streaming Progress Indicators** - Real-time progress bars and chunk counters- **Mongoose** - ODM for MongoDB
+
+VITE v5.0.0  ready in 500 ms
+
+➜  Local:   http://localhost:5173/```
 
 ```
 
 ai-travel-guide/- **Day-by-Day Breakdown** - Detailed daily schedules with activities, timings, and costs- **Google Gemini AI** - AI model for itinerary generation
 
+### Access the Application
+
 ├── client/                          # Frontend React application
+
+Open your browser and navigate to: **http://localhost:5173**
 
 │   ├── public/                      # Static assets- **Budget Tracking** - All costs displayed in Indian Rupees (₹)- **OpenWeatherMap API** - Weather data (optional)
 
+## 📡 API Endpoints
+
 │   ├── src/
 
-│   │   ├── components/              # Reusable React components- **Download Itineraries** - Export your plans as JSON files
+### Itinerary
 
-│   │   │   ├── Button.jsx
+- `POST /api/itinerary/generate` - Generate AI itinerary (with streaming)│   │   ├── components/              # Reusable React components- **Download Itineraries** - Export your plans as JSON files
 
-│   │   │   ├── Footer.jsx- **Filter & Search** - Filter trips by budget, duration, and travel style## 📁 Project Structure
+- `POST /api/itinerary/save` - Save user itinerary
 
-│   │   │   ├── Input.jsx
+- `GET /api/itinerary/:id` - Get saved itinerary│   │   │   ├── Button.jsx
 
-│   │   │   ├── ItineraryCard.jsx- **Interactive UI** - Smooth animations and transitions throughout
 
-│   │   │   ├── LoadingSpinner.jsx
+
+### Trips│   │   │   ├── Footer.jsx- **Filter & Search** - Filter trips by budget, duration, and travel style## 📁 Project Structure
+
+- `GET /api/trips` - Get all trips (with optional filters)
+
+- `GET /api/trips/:id` - Get single trip by ID│   │   │   ├── Input.jsx
+
+- `GET /api/trips/featured` - Get featured trips
+
+- `POST /api/trips` - Create new trip│   │   │   ├── ItineraryCard.jsx- **Interactive UI** - Smooth animations and transitions throughout
+
+
+
+### Weather│   │   │   ├── LoadingSpinner.jsx
+
+- `GET /api/weather/:city` - Get weather for city
 
 │   │   │   ├── Modal.jsx```
 
+## 🐛 Troubleshooting
+
 │   │   │   ├── Navbar.jsx
+
+### MongoDB Connection Failed
 
 │   │   │   ├── StreamingStatus.jsx  # Real-time streaming indicator---ai-travel-guide/
 
-│   │   │   ├── StreamingText.jsx    # Typewriter effect component
+**Local MongoDB:**
 
-│   │   │   ├── ThoughtProcess.jsx   # Chain of thought display├── client/                 # React frontend
+```bash│   │   │   ├── StreamingText.jsx    # Typewriter effect component
 
-│   │   │   └── TripCard.jsx
+# Windows
+
+net start MongoDB│   │   │   ├── ThoughtProcess.jsx   # Chain of thought display├── client/                 # React frontend
+
+
+
+# macOS│   │   │   └── TripCard.jsx
+
+brew services start mongodb-community
 
 │   │   ├── context/                 # React Context providers## 🛠 Tech Stack│   ├── src/
 
-│   │   │   └── AuthContext.jsx      # Authentication state management
+# Linux
+
+sudo systemctl start mongod│   │   │   └── AuthContext.jsx      # Authentication state management
+
+```
 
 │   │   ├── pages/                   # Page components│   │   ├── components/    # Reusable React components
 
-│   │   │   ├── Home.jsx
+**MongoDB Atlas:**
 
-│   │   │   ├── ItineraryBuilder.jsx # Main itinerary generation page### Frontend│   │   │   ├── Navbar.jsx
+- Check connection string format│   │   │   ├── Home.jsx
 
-│   │   │   ├── Login.jsx
+- Verify IP whitelist includes your IP
 
-│   │   │   ├── MyItineraries.jsx- **React 18.2** - UI library│   │   │   ├── Footer.jsx
+- Ensure database user has proper permissions│   │   │   ├── ItineraryBuilder.jsx # Main itinerary generation page### Frontend│   │   │   ├── Navbar.jsx
 
-│   │   │   ├── Signup.jsx
 
-│   │   │   ├── SuggestedTrips.jsx   # Browse curated trips- **Vite 5.0** - Build tool and dev server│   │   │   ├── Button.jsx
 
-│   │   │   ├── TripDetail.jsx
+### Port Already in Use│   │   │   ├── Login.jsx
 
-│   │   │   └── TripDetails.jsx      # Detailed trip view- **Tailwind CSS 3.4** - Utility-first CSS framework│   │   │   ├── Input.jsx
 
-│   │   ├── services/                # API service layer
 
-│   │   │   └── api.js               # Axios configuration & endpoints- **React Router 6.21** - Client-side routing│   │   │   ├── TripCard.jsx
+**Windows:**│   │   │   ├── MyItineraries.jsx- **React 18.2** - UI library│   │   │   ├── Footer.jsx
 
-│   │   ├── utils/                   # Utility functions
+```bash
 
-│   │   │   └── helpers.js- **Axios 1.6** - HTTP client│   │   │   ├── ItineraryCard.jsx
+netstat -ano | findstr :5000│   │   │   ├── Signup.jsx
 
-│   │   ├── App.jsx                  # Root component
+taskkill /PID <PID> /F
 
-│   │   ├── index.css                # Global styles & Tailwind- **Lucide React** - Icon library│   │   │   ├── LoadingSpinner.jsx
+```│   │   │   ├── SuggestedTrips.jsx   # Browse curated trips- **Vite 5.0** - Build tool and dev server│   │   │   ├── Button.jsx
 
-│   │   └── main.jsx                 # App entry point
+
+
+**macOS/Linux:**│   │   │   ├── TripDetail.jsx
+
+```bash
+
+lsof -i :5000│   │   │   └── TripDetails.jsx      # Detailed trip view- **Tailwind CSS 3.4** - Utility-first CSS framework│   │   │   ├── Input.jsx
+
+kill -9 <PID>
+
+```│   │   ├── services/                # API service layer
+
+
+
+### GEMINI_API_KEY Not Set│   │   │   └── api.js               # Axios configuration & endpoints- **React Router 6.21** - Client-side routing│   │   │   ├── TripCard.jsx
+
+
+
+- Ensure `.env` file exists in `server/` directory│   │   ├── utils/                   # Utility functions
+
+- Verify API key is correct (no extra spaces)
+
+- Restart backend server after adding the key│   │   │   └── helpers.js- **Axios 1.6** - HTTP client│   │   │   ├── ItineraryCard.jsx
+
+
+
+## 🔒 Security Notes│   │   ├── App.jsx                  # Root component
+
+
+
+⚠️ **Current Implementation:**│   │   ├── index.css                # Global styles & Tailwind- **Lucide React** - Icon library│   │   │   ├── LoadingSpinner.jsx
+
+- Authentication is client-side only (localStorage)
+
+- Suitable for demo/development purposes only│   │   └── main.jsx                 # App entry point
+
+- **NOT production-ready**
 
 │   ├── .eslintrc.cjs                # ESLint configuration│   │   │   ├── Modal.jsx
 
-│   ├── index.html                   # HTML template
+**For Production:**
 
-│   ├── package.json                 # Frontend dependencies### Backend│   │   │   ├── WeatherWidget.jsx
+- Implement JWT-based backend authentication│   ├── index.html                   # HTML template
 
-│   ├── tailwind.config.js           # Tailwind CSS configuration
+- Add password hashing (bcrypt)
 
-│   └── vite.config.js               # Vite configuration- **Node.js** - Runtime environment│   │   │   ├── StreamingText.jsx
+- Use secure HTTP-only cookies│   ├── package.json                 # Frontend dependencies### Backend│   │   │   ├── WeatherWidget.jsx
 
-│
+- Add rate limiting
 
-├── server/                          # Backend Node.js/Express application- **Express 4.18** - Web framework│   │   │   └── ThoughtProcess.jsx
+- Enable HTTPS│   ├── tailwind.config.js           # Tailwind CSS configuration
 
-│   ├── config/                      # Configuration files
 
-│   │   ├── db.js                    # MongoDB connection- **MongoDB** - Database (with Mongoose 8.0)│   │   ├── pages/         # Main application pages
 
-│   │   └── seedData.js              # Database seed script
+## 🤝 Contributing│   └── vite.config.js               # Vite configuration- **Node.js** - Runtime environment│   │   │   ├── StreamingText.jsx
 
-│   ├── controllers/                 # Route controllers- **Google Gemini AI** - AI model for itinerary generation│   │   │   ├── Home.jsx
 
-│   │   ├── itineraryController.js   # AI generation & streaming logic
 
-│   │   ├── tripController.js        # Trip CRUD operations- **CORS** - Cross-origin resource sharing│   │   │   ├── ItineraryBuilder.jsx
+Contributions are welcome! Please follow these steps:│
 
-│   │   └── weatherController.js     # Weather API integration
+
+
+1. Fork the repository├── server/                          # Backend Node.js/Express application- **Express 4.18** - Web framework│   │   │   └── ThoughtProcess.jsx
+
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)│   ├── config/                      # Configuration files
+
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+
+5. Open a Pull Request│   │   ├── db.js                    # MongoDB connection- **MongoDB** - Database (with Mongoose 8.0)│   │   ├── pages/         # Main application pages
+
+
+
+## 📄 License│   │   └── seedData.js              # Database seed script
+
+
+
+This project is open source and available under the MIT License.│   ├── controllers/                 # Route controllers- **Google Gemini AI** - AI model for itinerary generation│   │   │   ├── Home.jsx
+
+
+
+---│   │   ├── itineraryController.js   # AI generation & streaming logic
+
+
+
+**Made with ❤️ using React, Node.js, and Google Gemini AI**│   │   ├── tripController.js        # Trip CRUD operations- **CORS** - Cross-origin resource sharing│   │   │   ├── ItineraryBuilder.jsx
+
+
+
+Happy Traveling! ✈️🌍│   │   └── weatherController.js     # Weather API integration
+
 
 │   ├── middleware/                  # Express middleware- **dotenv** - Environment variable management│   │   │   ├── SuggestedTrips.jsx
 
