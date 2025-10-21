@@ -377,7 +377,7 @@ For questions, issues, or suggestions:
 
 1. **GitHub Issues**: [Create an issue](https://github.com/AKASH7233/travelGuide_AI/issues)
 2. **GitHub**: [@akash7233](https://github.com/akash7233)
-3. **LinkedIn**: [akash7233](https://linkedin.com/in/akash7233)
+3. **LinkedIn**: [akash7233](https://linkedin.com/in/akashyadav33)
 4. **Documentation**: Check this README and code comments
 
 ### Additional Documentation
