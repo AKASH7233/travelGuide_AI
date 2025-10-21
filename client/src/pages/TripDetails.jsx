@@ -173,6 +173,325 @@ const dummyTrips = [
       'Book adventure activities through certified operators'
     ]
   },
+  {
+    _id: '3',
+    destination: 'Paris, France',
+    description: 'The City of Light beckons with iconic landmarks, world-class art, and romantic ambiance.',
+    duration: '7',
+    budget: 'Moderate',
+    travelStyle: 'Romantic',
+    estimatedCost: '$1,500 - $2,500',
+    highlights: ['Eiffel Tower', 'Louvre Museum', 'Seine River Cruise', 'Montmartre'],
+    image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800',
+    overview: 'Paris, the capital of France, is one of the most beautiful and romantic cities in the world. Known for its iconic landmarks, world-class museums, and exquisite cuisine, Paris offers an unforgettable experience.',
+    days: [
+      {
+        day: 1,
+        title: 'Arrival & Champs-Élysées',
+        activities: [
+          { time: '2:00 PM', activity: 'Arrival and hotel check-in', location: 'Latin Quarter', estimatedCost: '$0' },
+          { time: '4:00 PM', activity: 'Walk down Champs-Élysées', location: 'Champs-Élysées', estimatedCost: '$0' },
+          { time: '6:00 PM', activity: 'Visit Arc de Triomphe', location: 'Place Charles de Gaulle', estimatedCost: '$15' },
+          { time: '8:00 PM', activity: 'Dinner at French bistro', location: 'Latin Quarter', estimatedCost: '$50' }
+        ]
+      },
+      {
+        day: 2,
+        title: 'Eiffel Tower & Seine Cruise',
+        activities: [
+          { time: '9:00 AM', activity: 'Visit Eiffel Tower summit', location: 'Champ de Mars', estimatedCost: '$35' },
+          { time: '12:00 PM', activity: 'Picnic at Trocadéro Gardens', location: 'Trocadéro', estimatedCost: '$20' },
+          { time: '3:00 PM', activity: 'Explore Trocadéro area', location: 'Trocadéro', estimatedCost: '$0' },
+          { time: '7:00 PM', activity: 'Seine River sunset cruise', location: 'River Seine', estimatedCost: '$20' }
+        ]
+      },
+      {
+        day: 3,
+        title: 'Louvre & Tuileries',
+        activities: [
+          { time: '9:00 AM', activity: 'Louvre Museum tour', location: 'Louvre', estimatedCost: '$20' },
+          { time: '1:00 PM', activity: 'Lunch at Angelina', location: 'Rue de Rivoli', estimatedCost: '$45' },
+          { time: '3:00 PM', activity: 'Stroll through Tuileries Garden', location: 'Tuileries', estimatedCost: '$0' },
+          { time: '6:00 PM', activity: 'Visit Place de la Concorde', location: 'Concorde', estimatedCost: '$0' }
+        ]
+      }
+    ],
+    totalEstimatedCost: '$1,500 - $2,500',
+    importantNotes: [
+      'Best time: April to June, September to October',
+      'Buy Paris Museum Pass for savings',
+      'Metro is the best way to get around',
+      'Book Eiffel Tower tickets online in advance',
+      'Try authentic French pastries and wine'
+    ]
+  },
+  {
+    _id: '4',
+    destination: 'Dubai, UAE',
+    description: 'Experience luxury, desert adventures, and futuristic architecture in this modern oasis.',
+    duration: '5',
+    budget: 'Luxury',
+    travelStyle: 'Solo',
+    estimatedCost: '$2,000 - $3,500',
+    highlights: ['Burj Khalifa', 'Desert Safari', 'Gold Souk', 'Dubai Mall'],
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800',
+    overview: 'Dubai is a city of superlatives, home to the world\'s tallest building, largest shopping malls, and most luxurious hotels. It perfectly blends modern luxury with traditional Arabian culture.',
+    days: [
+      {
+        day: 1,
+        title: 'Modern Dubai',
+        activities: [
+          { time: '10:00 AM', activity: 'Visit Burj Khalifa - 124th floor', location: 'Downtown Dubai', estimatedCost: '$50' },
+          { time: '1:00 PM', activity: 'Dubai Mall exploration', location: 'Downtown Dubai', estimatedCost: '$40' },
+          { time: '4:00 PM', activity: 'Dubai Aquarium visit', location: 'Dubai Mall', estimatedCost: '$40' },
+          { time: '8:00 PM', activity: 'Dubai Fountain show & dinner', location: 'Downtown', estimatedCost: '$80' }
+        ]
+      },
+      {
+        day: 2,
+        title: 'Desert Safari Adventure',
+        activities: [
+          { time: '10:00 AM', activity: 'Relax at JBR Beach', location: 'Jumeirah Beach', estimatedCost: '$0' },
+          { time: '1:00 PM', activity: 'Lunch at beach restaurant', location: 'JBR', estimatedCost: '$50' },
+          { time: '3:00 PM', activity: 'Desert safari with dune bashing', location: 'Desert', estimatedCost: '$80' },
+          { time: '7:00 PM', activity: 'BBQ dinner & belly dance show', location: 'Desert Camp', estimatedCost: '$0' }
+        ]
+      },
+      {
+        day: 3,
+        title: 'Traditional Dubai',
+        activities: [
+          { time: '9:00 AM', activity: 'Explore Gold & Spice Souks', location: 'Deira', estimatedCost: '$20' },
+          { time: '11:00 AM', activity: 'Visit Dubai Museum', location: 'Al Fahidi', estimatedCost: '$5' },
+          { time: '1:00 PM', activity: 'Abra boat ride', location: 'Dubai Creek', estimatedCost: '$1' },
+          { time: '3:00 PM', activity: 'Al Fahidi Historical District', location: 'Al Fahidi', estimatedCost: '$0' },
+          { time: '7:00 PM', activity: 'Dinner at Creek-side restaurant', location: 'Dubai Creek', estimatedCost: '$60' }
+        ]
+      }
+    ],
+    totalEstimatedCost: '$2,000 - $3,500',
+    importantNotes: [
+      'Best time: November to March',
+      'Dress modestly in public areas',
+      'Friday is the holy day - some places closed',
+      'Taxis are affordable and convenient',
+      'Alcohol only served in licensed venues'
+    ]
+  },
+  {
+    _id: '5',
+    destination: 'Bali, Indonesia',
+    description: 'Tropical paradise with stunning beaches, ancient temples, and vibrant culture.',
+    duration: '8',
+    budget: 'Budget',
+    travelStyle: 'Relaxation',
+    estimatedCost: '$800 - $1,200',
+    highlights: ['Beach clubs', 'Temples', 'Rice terraces', 'Spa treatments'],
+    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800',
+    overview: 'Bali offers a perfect blend of natural beauty, spiritual culture, and modern amenities. From surfing in Canggu to temple visits in Ubud, this island paradise has something for everyone.',
+    days: [
+      {
+        day: 1,
+        title: 'Arrival in Seminyak',
+        activities: [
+          { time: '1:00 PM', activity: 'Hotel check-in', location: 'Seminyak', estimatedCost: '$0' },
+          { time: '3:00 PM', activity: 'Seminyak Beach relaxation', location: 'Seminyak Beach', estimatedCost: '$0' },
+          { time: '6:00 PM', activity: 'Sunset at La Plancha', location: 'Seminyak', estimatedCost: '$15' },
+          { time: '8:00 PM', activity: 'Dinner at beach restaurant', location: 'Seminyak', estimatedCost: '$20' }
+        ]
+      },
+      {
+        day: 2,
+        title: 'Ubud Culture & Nature',
+        activities: [
+          { time: '8:00 AM', activity: 'Tegalalang Rice Terraces', location: 'Ubud', estimatedCost: '$5' },
+          { time: '11:00 AM', activity: 'Sacred Monkey Forest', location: 'Ubud', estimatedCost: '$7' },
+          { time: '1:00 PM', activity: 'Lunch at organic cafe', location: 'Ubud', estimatedCost: '$15' },
+          { time: '3:00 PM', activity: 'Ubud Market shopping', location: 'Ubud', estimatedCost: '$20' },
+          { time: '6:00 PM', activity: 'Traditional dance performance', location: 'Ubud Palace', estimatedCost: '$8' }
+        ]
+      },
+      {
+        day: 3,
+        title: 'Temple Tour',
+        activities: [
+          { time: '9:00 AM', activity: 'Tirta Empul holy spring', location: 'Tampaksiring', estimatedCost: '$3' },
+          { time: '12:00 PM', activity: 'Lunch with rice field view', location: 'Tegallalang', estimatedCost: '$12' },
+          { time: '3:00 PM', activity: 'Tanah Lot Temple', location: 'Tabanan', estimatedCost: '$5' },
+          { time: '6:00 PM', activity: 'Sunset at Tanah Lot', location: 'Tanah Lot', estimatedCost: '$0' }
+        ]
+      }
+    ],
+    totalEstimatedCost: '$800 - $1,200',
+    importantNotes: [
+      'Best time: April to October (dry season)',
+      'Rent a scooter for easy transportation',
+      'Wear sarong when visiting temples',
+      'Bargain at markets and with taxi drivers',
+      'Try authentic Indonesian food at warungs'
+    ]
+  },
+  {
+    _id: '6',
+    destination: 'Tokyo, Japan',
+    description: 'Where ancient tradition meets cutting-edge technology in perfect harmony.',
+    duration: '10',
+    budget: 'Moderate',
+    travelStyle: 'Cultural',
+    estimatedCost: '$2,000 - $3,500',
+    highlights: ['Shibuya Crossing', 'Senso-ji Temple', 'Sushi markets', 'Cherry blossoms'],
+    image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800',
+    overview: 'Tokyo seamlessly blends ultramodern and traditional, from neon-lit skyscrapers to historic temples. Experience unique culture, incredible food, and efficient public transportation.',
+    days: [
+      {
+        day: 1,
+        title: 'Shinjuku Exploration',
+        activities: [
+          { time: '2:00 PM', activity: 'Hotel check-in', location: 'Shinjuku', estimatedCost: '$0' },
+          { time: '4:00 PM', activity: 'Shinjuku Gyoen Garden', location: 'Shinjuku', estimatedCost: '$5' },
+          { time: '6:00 PM', activity: 'Tokyo Metro Building views', location: 'Shinjuku', estimatedCost: '$0' },
+          { time: '8:00 PM', activity: 'Omoide Yokocho dinner', location: 'Shinjuku', estimatedCost: '$30' }
+        ]
+      },
+      {
+        day: 2,
+        title: 'Traditional Tokyo',
+        activities: [
+          { time: '9:00 AM', activity: 'Senso-ji Temple', location: 'Asakusa', estimatedCost: '$0' },
+          { time: '11:00 AM', activity: 'Nakamise Street shopping', location: 'Asakusa', estimatedCost: '$20' },
+          { time: '1:00 PM', activity: 'Lunch at traditional restaurant', location: 'Asakusa', estimatedCost: '$25' },
+          { time: '3:00 PM', activity: 'Ueno Park & Museums', location: 'Ueno', estimatedCost: '$20' },
+          { time: '7:00 PM', activity: 'Ameyoko shopping street', location: 'Ueno', estimatedCost: '$15' }
+        ]
+      },
+      {
+        day: 3,
+        title: 'Shibuya & Harajuku',
+        activities: [
+          { time: '9:00 AM', activity: 'Meiji Shrine', location: 'Harajuku', estimatedCost: '$0' },
+          { time: '11:00 AM', activity: 'Takeshita Street shopping', location: 'Harajuku', estimatedCost: '$25' },
+          { time: '2:00 PM', activity: 'Shibuya Crossing experience', location: 'Shibuya', estimatedCost: '$0' },
+          { time: '4:00 PM', activity: 'Shibuya Sky observation', location: 'Shibuya', estimatedCost: '$25' },
+          { time: '7:00 PM', activity: 'Dinner in Shibuya', location: 'Shibuya', estimatedCost: '$35' }
+        ]
+      }
+    ],
+    totalEstimatedCost: '$2,000 - $3,500',
+    importantNotes: [
+      'Get a JR Pass for unlimited train travel',
+      'Best time: March-May or September-November',
+      'Learn basic Japanese phrases',
+      'Cash is still widely used',
+      'Respect local customs and etiquette'
+    ]
+  },
+  {
+    _id: '7',
+    destination: 'Santorini, Greece',
+    description: 'Iconic white-washed buildings and stunning sunsets over the Aegean Sea.',
+    duration: '6',
+    budget: 'Luxury',
+    travelStyle: 'Romantic',
+    estimatedCost: '$2,500 - $4,000',
+    highlights: ['Oia sunset', 'Volcanic beaches', 'Wine tasting', 'Caldera views'],
+    image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800',
+    overview: 'Santorini is the jewel of the Cyclades, famous for its dramatic cliffside villages, stunning sunsets, and unique volcanic beaches. A perfect romantic getaway.',
+    days: [
+      {
+        day: 1,
+        title: 'Arrival & Oia Sunset',
+        activities: [
+          { time: '12:00 PM', activity: 'Arrival and hotel check-in', location: 'Oia', estimatedCost: '$0' },
+          { time: '3:00 PM', activity: 'Explore Oia village', location: 'Oia', estimatedCost: '$0' },
+          { time: '6:00 PM', activity: 'Famous Oia sunset', location: 'Oia Castle', estimatedCost: '$0' },
+          { time: '8:30 PM', activity: 'Dinner with caldera view', location: 'Oia', estimatedCost: '$80' }
+        ]
+      },
+      {
+        day: 2,
+        title: 'Volcanic Adventure',
+        activities: [
+          { time: '9:00 AM', activity: 'Volcano boat tour', location: 'Nea Kameni', estimatedCost: '$60' },
+          { time: '12:00 PM', activity: 'Hot springs swim', location: 'Palea Kameni', estimatedCost: '$0' },
+          { time: '3:00 PM', activity: 'Thirassia island visit', location: 'Thirassia', estimatedCost: '$0' },
+          { time: '7:00 PM', activity: 'Return and dinner', location: 'Fira', estimatedCost: '$70' }
+        ]
+      },
+      {
+        day: 3,
+        title: 'Beach & Wine Day',
+        activities: [
+          { time: '10:00 AM', activity: 'Red Beach visit', location: 'Akrotiri', estimatedCost: '$0' },
+          { time: '1:00 PM', activity: 'Lunch at beach taverna', location: 'Perissa', estimatedCost: '$40' },
+          { time: '4:00 PM', activity: 'Wine tasting tour', location: 'Santo Wines', estimatedCost: '$50' },
+          { time: '7:00 PM', activity: 'Sunset dinner', location: 'Imerovigli', estimatedCost: '$90' }
+        ]
+      }
+    ],
+    totalEstimatedCost: '$2,500 - $4,000',
+    importantNotes: [
+      'Best time: April to November',
+      'Book caldera-view hotels early',
+      'Rent an ATV to explore the island',
+      'Try local Assyrtiko wine',
+      'Arrive 1 hour early for Oia sunset'
+    ]
+  },
+  {
+    _id: '8',
+    destination: 'New York City, USA',
+    description: 'The city that never sleeps - iconic landmarks, world-class museums, and diverse culture.',
+    duration: '5',
+    budget: 'Luxury',
+    travelStyle: 'Family',
+    estimatedCost: '$2,500 - $4,500',
+    highlights: ['Statue of Liberty', 'Central Park', 'Broadway shows', 'Times Square'],
+    image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800',
+    overview: 'New York City is a vibrant metropolis offering endless attractions from iconic landmarks to world-renowned museums, diverse neighborhoods, and unforgettable experiences.',
+    days: [
+      {
+        day: 1,
+        title: 'Manhattan Icons',
+        activities: [
+          { time: '9:00 AM', activity: 'Statue of Liberty ferry', location: 'Battery Park', estimatedCost: '$50' },
+          { time: '1:00 PM', activity: '9/11 Memorial visit', location: 'Downtown', estimatedCost: '$20' },
+          { time: '3:00 PM', activity: 'Wall Street walk', location: 'Financial District', estimatedCost: '$0' },
+          { time: '6:00 PM', activity: 'Brooklyn Bridge walk', location: 'Brooklyn Bridge', estimatedCost: '$0' },
+          { time: '8:00 PM', activity: 'Dinner in DUMBO', location: 'Brooklyn', estimatedCost: '$80' }
+        ]
+      },
+      {
+        day: 2,
+        title: 'Midtown Manhattan',
+        activities: [
+          { time: '9:00 AM', activity: 'Empire State Building', location: 'Midtown', estimatedCost: '$45' },
+          { time: '12:00 PM', activity: 'Times Square exploration', location: 'Times Square', estimatedCost: '$0' },
+          { time: '2:00 PM', activity: 'Lunch at food hall', location: 'Midtown', estimatedCost: '$40' },
+          { time: '4:00 PM', activity: 'Rockefeller Center', location: 'Midtown', estimatedCost: '$40' },
+          { time: '7:30 PM', activity: 'Broadway show', location: 'Theater District', estimatedCost: '$200' }
+        ]
+      },
+      {
+        day: 3,
+        title: 'Central Park & Museums',
+        activities: [
+          { time: '9:00 AM', activity: 'Central Park walk', location: 'Central Park', estimatedCost: '$0' },
+          { time: '11:00 AM', activity: 'Boat ride on the lake', location: 'Central Park', estimatedCost: '$15' },
+          { time: '1:00 PM', activity: 'Metropolitan Museum of Art', location: 'Upper East Side', estimatedCost: '$30' },
+          { time: '5:00 PM', activity: '5th Avenue shopping', location: '5th Avenue', estimatedCost: '$100' },
+          { time: '8:00 PM', activity: 'Dinner on Upper East Side', location: 'UES', estimatedCost: '$90' }
+        ]
+      }
+    ],
+    totalEstimatedCost: '$2,500 - $4,500',
+    importantNotes: [
+      'Buy Broadway tickets in advance',
+      'Get MetroCard for unlimited subway rides',
+      'Book Statue of Liberty tickets online',
+      'Best time: April-June or September-November',
+      'New York is walkable - bring comfortable shoes'
+    ]
+  },
 ];
 
 const TripDetails = () => {

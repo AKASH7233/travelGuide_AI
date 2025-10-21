@@ -5,11 +5,11 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import Button from '../components/Button';
 import api from '../services/api';
 
-// Dummy data for suggested trips
+// Dummy data for suggested trips - Updated to match TripDetails.jsx
 const dummyTrips = [
   {
     _id: '1',
-    destination: 'Goa',
+    destination: 'Goa, India',
     description: 'Experience pristine beaches, vibrant nightlife, and Portuguese heritage in India\'s party capital.',
     duration: '5 days',
     budget: 'Moderate',
@@ -21,7 +21,7 @@ const dummyTrips = [
   },
   {
     _id: '2',
-    destination: 'Manali',
+    destination: 'Manali, India',
     description: 'Adventure in the Himalayas with snow-capped peaks, scenic valleys, and thrilling activities.',
     duration: '6 days',
     budget: 'Moderate',
@@ -33,7 +33,79 @@ const dummyTrips = [
   },
   {
     _id: '3',
-    destination: 'Jaipur',
+    destination: 'Paris, France',
+    description: 'The City of Light awaits with iconic landmarks, world-class museums, and exquisite cuisine.',
+    duration: '7 days',
+    budget: 'Moderate',
+    travelStyle: 'Romantic',
+    estimatedCost: '$1,500 - $2,500',
+    highlights: ['Eiffel Tower', 'Louvre Museum', 'Seine River Cruise', 'Montmartre'],
+    image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800',
+    isFeatured: true
+  },
+  {
+    _id: '4',
+    destination: 'Dubai, UAE',
+    description: 'Experience luxury and innovation in this stunning desert metropolis with world-class attractions.',
+    duration: '5 days',
+    budget: 'Luxury',
+    travelStyle: 'Solo',
+    estimatedCost: '$2,000 - $3,500',
+    highlights: ['Burj Khalifa', 'Desert Safari', 'Dubai Mall', 'Palm Jumeirah'],
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800',
+    isFeatured: true
+  },
+  {
+    _id: '5',
+    destination: 'Bali, Indonesia',
+    description: 'Tropical paradise with stunning beaches, ancient temples, and vibrant culture.',
+    duration: '8 days',
+    budget: 'Budget',
+    travelStyle: 'Relaxation',
+    estimatedCost: '$800 - $1,200',
+    highlights: ['Beach clubs', 'Temple tours', 'Rice terraces', 'Water sports'],
+    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800',
+    isFeatured: true
+  },
+  {
+    _id: '6',
+    destination: 'Tokyo, Japan',
+    description: 'Blend of ancient tradition and cutting-edge technology in Japan\'s vibrant capital.',
+    duration: '10 days',
+    budget: 'Moderate',
+    travelStyle: 'Cultural',
+    estimatedCost: '$2,000 - $3,500',
+    highlights: ['Shibuya Crossing', 'Mount Fuji', 'Temples', 'Sushi experiences'],
+    image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800',
+    isFeatured: true
+  },
+  {
+    _id: '7',
+    destination: 'Santorini, Greece',
+    description: 'Stunning sunsets, white-washed buildings, and crystal-clear Aegean waters.',
+    duration: '6 days',
+    budget: 'Luxury',
+    travelStyle: 'Romantic',
+    estimatedCost: '$2,500 - $4,000',
+    highlights: ['Oia sunset', 'Volcanic beaches', 'Wine tasting', 'Caldera views'],
+    image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800',
+    isFeatured: true
+  },
+  {
+    _id: '8',
+    destination: 'New York City, USA',
+    description: 'The city that never sleeps offers world-class attractions, dining, and entertainment.',
+    duration: '5 days',
+    budget: 'Luxury',
+    travelStyle: 'Family',
+    estimatedCost: '$2,500 - $4,500',
+    highlights: ['Statue of Liberty', 'Central Park', 'Broadway shows', 'Times Square'],
+    image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800',
+    isFeatured: true
+  },
+  {
+    _id: '9',
+    destination: 'Jaipur, India',
     description: 'Explore the Pink City\'s majestic forts, vibrant markets, and rich Rajasthani culture.',
     duration: '4 days',
     budget: 'Budget',
@@ -41,78 +113,6 @@ const dummyTrips = [
     estimatedCost: '₹10,000 - ₹18,000',
     highlights: ['Amber Fort', 'City Palace', 'Hawa Mahal', 'Local bazaars'],
     image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800',
-    isFeatured: true
-  },
-  {
-    _id: '4',
-    destination: 'Kerala Backwaters',
-    description: 'Serene houseboat experience through lush green canals and tranquil villages.',
-    duration: '5 days',
-    budget: 'Moderate',
-    travelStyle: 'Relaxation',
-    estimatedCost: '₹18,000 - ₹30,000',
-    highlights: ['Houseboat cruise', 'Ayurvedic spa', 'Tea plantations', 'Wildlife sanctuary'],
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800',
-    isFeatured: false
-  },
-  {
-    _id: '5',
-    destination: 'Leh-Ladakh',
-    description: 'Epic road trip through high-altitude desert landscapes and Buddhist monasteries.',
-    duration: '8 days',
-    budget: 'Moderate',
-    travelStyle: 'Adventure',
-    estimatedCost: '₹35,000 - ₹50,000',
-    highlights: ['Pangong Lake', 'Nubra Valley', 'Khardung La', 'Monasteries'],
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
-    isFeatured: true
-  },
-  {
-    _id: '6',
-    destination: 'Udaipur',
-    description: 'The City of Lakes offers romantic palaces, stunning sunsets, and royal heritage.',
-    duration: '3 days',
-    budget: 'Luxury',
-    travelStyle: 'Romantic',
-    estimatedCost: '₹25,000 - ₹45,000',
-    highlights: ['Lake Palace', 'City Palace', 'Boat rides', 'Sunset views'],
-    image: 'https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=800',
-    isFeatured: false
-  },
-  {
-    _id: '7',
-    destination: 'Rishikesh',
-    description: 'Yoga capital of the world with spiritual vibes, river rafting, and adventure sports.',
-    duration: '4 days',
-    budget: 'Budget',
-    travelStyle: 'Adventure',
-    estimatedCost: '₹8,000 - ₹15,000',
-    highlights: ['River rafting', 'Yoga retreats', 'Ganga Aarti', 'Bungee jumping'],
-    image: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800',
-    isFeatured: false
-  },
-  {
-    _id: '8',
-    destination: 'Andaman Islands',
-    description: 'Tropical paradise with crystal-clear waters, coral reefs, and pristine beaches.',
-    duration: '7 days',
-    budget: 'Luxury',
-    travelStyle: 'Relaxation',
-    estimatedCost: '₹40,000 - ₹60,000',
-    highlights: ['Scuba diving', 'Beach resorts', 'Radhanagar Beach', 'Water sports'],
-    image: 'https://images.unsplash.com/photo-1559562538-0fa54439cd5c?w=800',
-    isFeatured: true
-  },
-  {
-    _id: '9',
-    destination: 'Varanasi',
-    description: 'Ancient spiritual city on the Ganges with temples, ghats, and mystical experiences.',
-    duration: '3 days',
-    budget: 'Budget',
-    travelStyle: 'Cultural',
-    estimatedCost: '₹7,000 - ₹12,000',
-    highlights: ['Ganga Aarti', 'Boat rides', 'Temples', 'Street food'],
-    image: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=800',
     isFeatured: false
   }
 ];
